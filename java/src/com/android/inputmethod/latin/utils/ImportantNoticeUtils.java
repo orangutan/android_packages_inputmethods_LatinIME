@@ -108,7 +108,8 @@ public final class ImportantNoticeUtils {
             updateContactsNoticeShown(context);
             return false;
         }
-        return true;
+	// we dont want this notice shown. alway return false.
+        return false;
     }
 
     public static String getSuggestContactsNoticeTitle(final Context context) {
